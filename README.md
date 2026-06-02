@@ -1,47 +1,55 @@
 # Interactive Census Data Dashboard
 
-An internship project that presents census data through an interactive dashboard for exploring states, districts, population age groups, and literacy insights.
+An interactive full-stack census dashboard built during the Capabl Summer Internship to explore state and district demographics, population age groups, and literacy insights through dynamic visualizations.
 
 ## Overview
 
-This project is split into two parts:
+This project combines a simple Express backend with a dashboard-style frontend for exploring sample census data. Users can select a state and district, view quick summary metrics, and analyze age-group population distribution in a visual format.
 
-- `backend/`: A Node.js + Express API that serves sample census data.
-- `frontend/`: A lightweight HTML, CSS, and JavaScript dashboard that consumes the API and visualizes population data with D3.js.
+## Key Features
 
-## Features
-
-- State-wise and district-wise selection
-- Census data fetched dynamically from an API
-- Bar chart visualization using D3.js
-- Simple full-stack structure for learning data dashboard development
+- Dashboard layout with a modern responsive interface
+- State and district filters for data exploration
+- KPI cards for selected location, total population, and literacy rate
+- Population by age-group bar chart using D3.js
+- District insight panel with quick observations
+- Sample multi-district dataset for Maharashtra and Karnataka
 
 ## Tech Stack
 
-- Node.js
-- Express.js
 - HTML5
 - CSS3
 - JavaScript
-- Axios
 - D3.js
+- Axios
+- Node.js
+- Express.js
 
 ## Project Structure
 
 ```text
 Project Cencus/
-├── backend/
-│   ├── index.js
-│   ├── package.json
-│   └── Procfile
-├── frontend/
-│   ├── app.js
-│   ├── index.html
-│   └── styles.css
-└── README.md
+|-- backend/
+|   |-- index.js
+|   |-- package.json
+|   `-- Procfile
+|-- docs/
+|   `-- certificate.pdf
+|-- frontend/
+|   |-- app.js
+|   |-- index.html
+|   `-- styles.css
+`-- README.md
 ```
 
-## How To Run
+## How It Works
+
+1. The frontend loads the list of states from the backend API.
+2. After a state is selected, the corresponding districts are fetched dynamically.
+3. When a district is selected, the dashboard updates its metrics, insights, and chart.
+4. D3.js renders the population age-group visualization for the chosen district.
+
+## Local Setup
 
 ### 1. Install backend dependencies
 
@@ -56,7 +64,7 @@ npm install
 npm start
 ```
 
-The API runs by default at `http://localhost:3000`.
+The backend runs at `http://localhost:3000`.
 
 ### 3. Open the frontend
 
@@ -68,9 +76,9 @@ Open `frontend/index.html` in your browser.
 - `GET /api/districts?stateCode=MH`
 - `GET /api/census?districtCode=PUN`
 
-## Sample Data Included
+## Sample Data
 
-The current sample dataset includes:
+The current project includes sample dashboard data for:
 
 - Maharashtra
 - Karnataka
@@ -80,17 +88,17 @@ The current sample dataset includes:
 
 ## Internship Context
 
-This repository contains the work completed for the Capabl Summer Internship project on an Interactive Census Data Dashboard.
+This repository contains the internship project completed under Capabl India for building an interactive census data dashboard.
 
-The participation certificate is included at `docs/certificate.pdf`.
+The participation certificate is available at `docs/certificate.pdf`.
 
-## Future Improvements
+## Possible Enhancements
 
-- Add more states and districts
-- Use real census datasets from official sources
-- Add more chart types and filters
-- Improve responsiveness and dashboard styling
+- Add more states and districts from a real census dataset
+- Add pie charts, trend charts, and comparison views
+- Integrate a database instead of static in-memory data
 - Deploy the frontend and backend online
+- Add search, export, and advanced dashboard filters
 
 ## Author
 
