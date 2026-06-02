@@ -7,16 +7,88 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Census Data Dashboard</h1>
-    </header>
-    <div id="controls">
-        <label for="state-select">Select State:</label>
-        <select id="state-select"></select>
-        <label for="district-select">Select District:</label>
-        <select id="district-select"></select>
+    <div class="page-shell">
+        <header class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Capabl Summer Internship Project</p>
+                <h1>Interactive Census Data Dashboard</h1>
+                <p class="hero-text">
+                    Explore district-level census insights with location filters, quick metrics,
+                    and population age-group visualization.
+                </p>
+            </div>
+            <div class="hero-badge">
+                <span>India Census Explorer</span>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <section class="panel filters-panel">
+                <div class="panel-heading">
+                    <h2>Filters</h2>
+                    <p>Choose a state and district to load dashboard insights.</p>
+                </div>
+
+                <div class="filter-grid">
+                    <label class="field">
+                        <span>State</span>
+                        <select id="state-select">
+                            <option value="">Select a state</option>
+                        </select>
+                    </label>
+
+                    <label class="field">
+                        <span>District</span>
+                        <select id="district-select" disabled>
+                            <option value="">Select a district</option>
+                        </select>
+                    </label>
+                </div>
+            </section>
+
+            <section class="stats-grid">
+                <article class="stat-card">
+                    <span class="stat-label">Selected State</span>
+                    <strong class="stat-value" id="selected-state">Not selected</strong>
+                </article>
+
+                <article class="stat-card">
+                    <span class="stat-label">Selected District</span>
+                    <strong class="stat-value" id="selected-district">Not selected</strong>
+                </article>
+
+                <article class="stat-card">
+                    <span class="stat-label">Total Population</span>
+                    <strong class="stat-value" id="total-population">--</strong>
+                </article>
+
+                <article class="stat-card">
+                    <span class="stat-label">Literacy Rate</span>
+                    <strong class="stat-value" id="literacy-rate">--</strong>
+                </article>
+            </section>
+
+            <section class="dashboard-grid">
+                <article class="panel chart-panel">
+                    <div class="panel-heading">
+                        <h2>Population by Age Group</h2>
+                        <p id="chart-subtitle">Select a district to view the chart.</p>
+                    </div>
+                    <div id="visualization" class="chart-area"></div>
+                </article>
+
+                <article class="panel insights-panel">
+                    <div class="panel-heading">
+                        <h2>Dashboard Insights</h2>
+                        <p>Quick summary of the currently selected district.</p>
+                    </div>
+                    <ul id="insights-list" class="insights-list">
+                        <li>Select a district to see insights.</li>
+                    </ul>
+                </article>
+            </section>
+        </main>
     </div>
-    <div id="visualization"></div>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
