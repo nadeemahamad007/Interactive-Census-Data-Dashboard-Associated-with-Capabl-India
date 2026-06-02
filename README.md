@@ -2,6 +2,14 @@
 
 An interactive full-stack census dashboard built during the Capabl Summer Internship to explore state and district demographics, population age groups, and literacy insights through dynamic visualizations.
 
+![HTML5](https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Interactive-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![D3.js](https://img.shields.io/badge/D3.js-Data%20Visualization-F28E2B?style=for-the-badge&logo=d3.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-API-000000?style=for-the-badge&logo=express&logoColor=white)
+![GitHub Ready](https://img.shields.io/badge/GitHub-Ready-1F6FEB?style=for-the-badge&logo=github&logoColor=white)
+
 ## Overview
 
 This project combines a simple Express backend with a dashboard-style frontend for exploring sample census data. Users can select a state and district, view quick summary metrics, and analyze age-group population distribution in a visual format.
@@ -103,3 +111,5 @@ The participation certificate is available at `docs/certificate.pdf`.
 ## Author
 
 Nadeem Ahamad
+
+Prepared as a Data Science Internship Project and refined for GitHub portfolio presentation.
