@@ -8,7 +8,7 @@ An interactive full-stack census dashboard built during the Capabl Summer Intern
 ![D3.js](https://img.shields.io/badge/D3.js-Data%20Visualization-F28E2B?style=for-the-badge&logo=d3.js&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-API-000000?style=for-the-badge&logo=express&logoColor=white)
-![GitHub Ready](https://img.shields.io/badge/GitHub-Ready-1F6FEB?style=for-the-badge&logo=github&logoColor=white)
+
 
 ## Overview
 
